@@ -1,0 +1,95 @@
+* {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+html {
+  background-color: lightblue;
+}
+.title {
+  text-align: center;
+  font-size: 48px;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.to-do-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30%;
+}
+form {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+form input {
+  width: 60%;
+  height: 50px;
+}
+form button {
+  width: 20%;
+}
+#list-of-tasks {
+  list-style: none;
+  padding: 0;
+  text-indent: 0;
+  width: 100%;
+}
+.completed {
+  text-decoration: line-through;
+}
+button {
+  border: 0;
+  border-radius: 4px;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.3);
+  color: white;
+}
+.add-button {
+  background-color: rgb(2, 201, 2);
+  transition: background-color 0.3s ease-in-out;
+}
+.add-button:hover {
+  background-color: green;
+}
+#list-of-tasks li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  margin-bottom: 16px;
+  padding: 0;
+}
+
+#list-of-tasks li button {
+  height: 100%;
+}
+#list-of-tasks li span {
+  width: 60%;
+}
+.check-button {
+  background-color: blue;
+  transition: background-color 0.3s ease-in-out;
+}
+.check-button:hover {
+  background-color: rgb(0, 0, 182);
+}
+.delete-button {
+  background-color: red;
+  transition: background-color 0.3s ease-in-out;
+}
+.delete-button:hover {
+  background-color: rgb(201, 2, 2);
+}
+.buttons {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  gap: 8px;
+}
+.buttons button {
+  display: block;
+  width: 50%;
+}
