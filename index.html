@@ -13,10 +13,11 @@
     <title>To do list</title>
   </head>
   <body>
+    <div class="gradient-background"></div>
     <div class="container">
       <h2 class="title">To do list</h2>
       <div class="to-do-container">
-        <form onsubmit="handleSubmit(event)" autocomplete="off">
+        <div class="input-container">
           <input
             autocomplete="false"
             name="hidden"
@@ -29,10 +30,18 @@
             placeholder="Add a task to your list!"
             autocomplete="off"
             name="task"
+            onkeydown="handleKeyDown(event)"
           />
-          <button type="submit" class="add-button">Add</button>
-        </form>
-        <ul id="list-of-tasks"></ul>
+          <button type="submit" class="add-button" onclick="addTask()">
+            Add
+          </button>
+        </div>
+        <div class="list-container hide">
+          <ul id="list-of-tasks"></ul>
+          <button class="clear" type="button" onclick="clearList()">
+            Clear
+          </button>
+        </div>
       </div>
     </div>
     <script src="./script.js"></script>
